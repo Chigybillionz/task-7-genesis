@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Mood Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        #greeting {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        #moodBox {
+            width: 150px;
+            height: 150px;
+            background: lightblue;
+            margin-top: 20px;
+            transition: width 0.3s, height 0.3s;
+        }
+
+        #secret {
+            margin-top: 20px;
+            font-style: italic;
+            display: none;
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- .innerText gets ONLY the visible text, -->
+    <!-- while .innerHTML can read/write HTML tags and structure. -->
+
+    <h1>Personal Mood Dashboard</h1>
+
+    <!-- Name Input -->
+    <label>Your Name:</label>
+    <input type="text" id="nameInput" placeholder="Enter your name..." />
+    <p id="greeting">Hello!, friend!</p>
+
+    <!-- Mood Box -->
+    <div id="moodBox"></div>
+    <button id="growBtn">Grow</button>
+    <button id="shrinkBtn">Shrink</button>
+
+    <br><br>
+
+    <!-- Day / Night Mode -->
+    <button id="toggleModeBtn">Toggle Day/Night</button>
+
+    <br><br>
+
+    <!-- Secret Message -->
+    <button id="secretBtn">Show Secret</button>
+    <p id="secret">✨ You can never forget this name Okorie Chigozie Jehoshaphat! ✨</p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
